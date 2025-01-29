@@ -1,0 +1,7 @@
+
+Flask==3.1.0  
+africastalking
+jose
+pytest
+python-dotenv
+gunicorn==23.0.0
