@@ -7,13 +7,14 @@
 
 
 
+import os
 from app.create_app import create_app
 
 app = create_app()
 
 if __name__ == "__main__":
-    # Do not use app.run() in serverless environments
-    pass
+    port = int(os.environ.get("PORT", 5000))  # Vercel uses dynamic ports
+    app.run(host="0.0.0.0", port=port)
 
 
 
