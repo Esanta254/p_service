@@ -1,5 +1,0 @@
-flask
-africastalking
-jose
-pytest
-python-dotenv
